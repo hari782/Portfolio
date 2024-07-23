@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.left-sidebar {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    display: block;
+    
+}
+
+.left-sidebar img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.left-sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.information{
+   text-align: left;
+   margin-left: 10px;
+   padding: 30px 20px;
+}
+.left-sidebar p {
+    margin-bottom: 5px;
+}
+
+.left-sidebar a {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.right-content {
+    padding: 30px;
+}
+
+.right-content .navbar {
+    margin-bottom: 20px;
+    
+}
+
+.about-me, .activities {
+    margin-bottom: 20px;
+}
+
+.nav-pos
+{
+    position: sticky;
+    top: 0;
+    background-color: black ;
+}
+.images{
+    width: 40%;
+    height: auto;
+    border-radius: 5px;
+    display: grid;
+    margin-left: 30%;
+}
