@@ -11,7 +11,55 @@ body {
     display: block;
     
 }
+#nav1{
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nav1:hover{
+    text-decoration: underline;
+    color: red;
+}
+#nav2{
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nav2:hover{
+    text-decoration: underline;
+    color: red;
+}
+#nav3{
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nav3:hover{
+    text-decoration: underline;
+    color: red;
+}
+#nav4{
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#nav4:hover{
+    text-decoration: underline;
+    color: red;
+}
 
+#infoimg{
+    height: auto; 
+    margin-top: 10px; 
+    text-decoration: none;
+    width: 6%;
+}
+
+#linkto{
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: inherit;
+}
+#linkto:hover{
+    text-decoration: underline;
+    color: red;
+}
 .left-sidebar img {
     width: 150px;
     height: 150px;
@@ -62,4 +110,71 @@ body {
     border-radius: 5px;
     display: grid;
     margin-left: 30%;
+}
+
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), black);
+    color: #f4f4f4;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    transition: height 0.5s;
+}
+.layer h5 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer p {
+    font-size: 14px;
+}
+.layer a {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #ffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.work:hover img {
+    transform: scale(1.1);
+}
+.work:hover .layer {
+    height: 100%;
+}
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff0000;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+.zoom:hover{
+    transform: scale(1.3);
 }
