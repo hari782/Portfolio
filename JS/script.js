@@ -26,3 +26,50 @@
 // b.addEventListener("pointerover", function(){
 //     ol.style.display = "block";
 // });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form[name="Register-form"]');
+
+    form.addEventListener('submit', function(event) {
+        // Get the form elements
+        const fullName = document.getElementById('fullname');
+        const email = document.getElementById('email');
+        const location = document.getElementById('location');
+        const message = document.getElementById('message');
+
+        // Validate full name
+        if (fullName.value.trim() === '') {
+            alert('Full Name is required.');
+            fullName.focus();
+            event.preventDefault();
+            return false;
+        }
+
+        // Validate email
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email.value.trim())) {
+            alert('Please enter a valid email address.');
+            email.focus();
+            event.preventDefault();
+            return false;
+        }
+
+        // Validate location
+        if (location.value.trim() === '') {
+            alert('Location is required.');
+            location.focus();
+            event.preventDefault();
+            return false;
+        }
+
+        // Validate message
+        if (message.value.trim() === '') {
+            alert('Message is required.');
+            message.focus();
+            event.preventDefault();
+            return false;
+        }
+
+        return true;
+    });
+});
